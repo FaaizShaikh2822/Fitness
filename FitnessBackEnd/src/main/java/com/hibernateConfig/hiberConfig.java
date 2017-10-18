@@ -46,9 +46,9 @@ public class hiberConfig
 	
 	@Autowired
 	@Bean(name="userDaoImpl")
-	public UserDaoImpl getUserData(SessionFactory sessionFac)
+	public UserDaoImpl getUserData(SessionFactory sessionFactory)
 	{
-		return new UserDaoImpl(sessionFac);
+		return new UserDaoImpl(sessionFactory);
 	}
 	
 	@Autowired

@@ -21,7 +21,7 @@ public class CatagoryDaoTest
 		
 		SessionFactory sessionFactory=(SessionFactory)configApplnContext.getBean("hiberConfig.class");
 		
-		CategoryDao categoryDao=(CategoryDao)configApplnContext.getBean("hiberconfig.class");
+		CategoryDao categoryDao=(CategoryDao)configApplnContext.getBean("categoryDao");
 		
 	}
 	
@@ -34,7 +34,7 @@ public class CatagoryDaoTest
 		category.setName("Shirt");
 		category.setDesc("Wrangler Shirtings");
 		
-		assertTrue(CategoryDao.addCategory(category));
+		assertTrue(categoryDao.addCategory(category));
 	}
 	
 	@Test

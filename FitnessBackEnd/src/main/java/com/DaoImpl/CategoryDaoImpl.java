@@ -1,6 +1,7 @@
 package com.DaoImpl;
 
 import java.util.List;
+import com.model.Category;
 
 
 import javax.transaction.Transactional;
@@ -8,7 +9,6 @@ import javax.transaction.Transactional;
 import org.h2.engine.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
-import org.junit.experimental.categories.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -50,9 +50,21 @@ public class CategoryDaoImpl implements CategoryDao
 			return false;
 		}
 	}
-	
 
-	public boolean deleteCategory(java.util.Locale.Category category) 
+	public List<Category> retrieveCategory()
+	{
+		Session session= (Session) sessionFactory.openSession();
+		
+		return null;
+	}
+
+	public Category getCategory(int catId) 
+	{
+		Session session= (Session) sessionFactory.openSession();
+		return null;
+	}
+
+	public boolean deleteCategory(Category category)
 	{
 		try
 		{
@@ -66,21 +78,6 @@ public class CategoryDaoImpl implements CategoryDao
 			return false;
 		}
 	}
-
-	public List<Category> retreiveCategories()
-	{
-		Session session= (Session) sessionFactory.openSession();
-		
-		return null;
-	}
-
-	public Category getCategory(int catId) 
-	{
-		Session session= (Session) sessionFactory.openSession();
-		return null;
-	}
-
-	
 
 	
 }

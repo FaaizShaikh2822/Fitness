@@ -53,7 +53,7 @@
                                   <blockquote>
                                         <div class="row">
                                             <div class="col-sm-8 col-sm-offset-2">
-											<img src="" alt="Lee" style="width:70%;">
+						<img src="" alt="Lee" style="width:70%;">
                                             </div>
                                         </div>
                                     </blockquote>
@@ -63,7 +63,7 @@
                                     <blockquote>
                                         <div class="row">
                                             <div class="col-sm-8 col-sm-offset-2">
-											<img src="" alt="Spark" style="width:70%;">
+						<img src="" alt="Spark" style="width:70%;">
                                             </div>
                                         </div>
                                     </blockquote>
@@ -73,7 +73,7 @@
                                     <blockquote>
                                         <div class="row">
                                             <div class="col-sm-8 col-sm-offset-2">
-											<img src="" alt="Gas" style="width:70%;">
+						<img src="" alt="Gas" style="width:70%;">
                                             </div>
                                         </div>
                                     </blockquote>

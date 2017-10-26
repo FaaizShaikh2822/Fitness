@@ -4,7 +4,6 @@
 <html>
 <head>
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css3" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -87,17 +86,17 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner text-centre">
       <div class="item active">
         <img src="_1.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="DSC_0077_1.jpg - FitnessFrontEnd/WebContent/WEB-INF/resource" alt="Chicago" style="width:100%;">
+        <img src="" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="DSC_0207_2.jpg - FitnessFrontEnd/WebContent/WEB-INF/resource" alt="New york" style="width:100%;">
+        <img src="" alt="New york" style="width:100%;">
       </div>
     </div>
 

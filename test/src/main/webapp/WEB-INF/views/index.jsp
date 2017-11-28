@@ -9,12 +9,13 @@
 
 
 <div class="jumbotron text-center">
-	<img src="/FitnessFrontEnd/WebContent/WEB-INF/resources/images/a.png"></img>
+	<img src="/a.png - test/src/main/webapp/WEB-INF/resources/images"></img>
   <h1>Apperal Fashion House</h1>
   <p>Wear who suits you</p> 
 </div>
 
 <div class="container">
+	<h1><i>${messege}</i></h1>
 	<center>
 		<a href="Category"><b>Category</b></a>||
 		<a href="Product"><b>Product</b></a>

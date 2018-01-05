@@ -25,8 +25,35 @@ var app=angular.module("app",['ngRoute'])
 						tremplateUrl:'views/jobform.html'
 						controller:'JobController'
 					})
+			.when('/alljobs',
+					{ // from Controller to View [$scope.persons=[]]
+						templateUrl:'views/jobslist.html', 
+						controller:'JobController'
+					})
+			.when('/addblog',
+					{
+						templateUrl:'views/blogform.html', //V to Controller
+						controller:'BlogPostController'
+					})
+			.when('/getblogs',
+					{
+						templateUrl:'views/blogslist.html',//Controller to V
+						controller:'BlogPostController'
+					})
+			.when('/admin/getblog/:id',
+					{
+						templateUrl:'views/approvalform.html',
+						controller:'BlogPostDetailsController'
+					})
+			.when('/getblog/:id',
+					{
+						templateUrl:'views/blogdetails.html',
+						controller:'BlogPostDetailsController'
+					})
+	
 					.otherwise({templateUrl:'views/home.html'})
 		})
+		
 	app.run(function($rootScope,$cookieStore,UserService,$location)
 			{
 			alert($cookieStore.get('currentUser'))
@@ -41,8 +68,11 @@ var app=angular.module("app",['ngRoute'])
 						delete $rootScope.currentUser;
 						$cookieStore.remove('currentUser')
 						$location.path('/login')
+						
 					},function(response)
 					{
+						delete $rootScope.currentUser;
+						$cookieStore.remove('currentUser')
 						console.log(response.status)
 						$location.path('/login')
 					})
